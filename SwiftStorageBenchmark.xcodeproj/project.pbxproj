@@ -11,6 +11,9 @@
 		F5AF32742BB2749800875D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF32732BB2749800875D26 /* ContentView.swift */; };
 		F5AF32762BB2749900875D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AF32752BB2749900875D26 /* Assets.xcassets */; };
 		F5AF32792BB2749900875D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AF32782BB2749900875D26 /* Preview Assets.xcassets */; };
+		F5B06E882BB2753C00E5EEA8 /* ScalarBenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E872BB2753C00E5EEA8 /* ScalarBenchmarkView.swift */; };
+		F5B06E8A2BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E892BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift */; };
+		F5B06E8C2BB275C400E5EEA8 /* ScalarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E8B2BB275C400E5EEA8 /* ScalarType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F5AF32732BB2749800875D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5AF32752BB2749900875D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5AF32782BB2749900875D26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5B06E872BB2753C00E5EEA8 /* ScalarBenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarBenchmarkView.swift; sourceTree = "<group>"; };
+		F5B06E892BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarBenchmarkViewModel.swift; sourceTree = "<group>"; };
+		F5B06E8B2BB275C400E5EEA8 /* ScalarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		F5AF32702BB2749800875D26 /* SwiftStorageBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				F5B06E852BB2752300E5EEA8 /* Benchmark */,
 				F5AF32712BB2749800875D26 /* SwiftStorageBenchmarkApp.swift */,
 				F5AF32732BB2749800875D26 /* ContentView.swift */,
 				F5AF32752BB2749900875D26 /* Assets.xcassets */,
@@ -65,6 +72,24 @@
 				F5AF32782BB2749900875D26 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5B06E852BB2752300E5EEA8 /* Benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				F5B06E862BB2752C00E5EEA8 /* Scalar */,
+			);
+			path = Benchmark;
+			sourceTree = "<group>";
+		};
+		F5B06E862BB2752C00E5EEA8 /* Scalar */ = {
+			isa = PBXGroup;
+			children = (
+				F5B06E872BB2753C00E5EEA8 /* ScalarBenchmarkView.swift */,
+				F5B06E892BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift */,
+				F5B06E8B2BB275C400E5EEA8 /* ScalarType.swift */,
+			);
+			path = Scalar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +164,9 @@
 			files = (
 				F5AF32742BB2749800875D26 /* ContentView.swift in Sources */,
 				F5AF32722BB2749800875D26 /* SwiftStorageBenchmarkApp.swift in Sources */,
+				F5B06E8A2BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift in Sources */,
+				F5B06E882BB2753C00E5EEA8 /* ScalarBenchmarkView.swift in Sources */,
+				F5B06E8C2BB275C400E5EEA8 /* ScalarType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
