@@ -14,6 +14,12 @@
 		F5B06E882BB2753C00E5EEA8 /* ScalarBenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E872BB2753C00E5EEA8 /* ScalarBenchmarkView.swift */; };
 		F5B06E8A2BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E892BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift */; };
 		F5B06E8C2BB275C400E5EEA8 /* ScalarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E8B2BB275C400E5EEA8 /* ScalarType.swift */; };
+		F5B06E932BB27C6B00E5EEA8 /* BenchmarkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E922BB27C6B00E5EEA8 /* BenchmarkTask.swift */; };
+		F5B06E952BB27D8100E5EEA8 /* UserDefaultsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E942BB27D8100E5EEA8 /* UserDefaultsTask.swift */; };
+		F5B06E972BB2867100E5EEA8 /* PropertyListTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E962BB2867100E5EEA8 /* PropertyListTask.swift */; };
+		F5B06E992BB2868A00E5EEA8 /* SecureStorageTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E982BB2868A00E5EEA8 /* SecureStorageTask.swift */; };
+		F5B06E9B2BB286A600E5EEA8 /* CoreDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06E9A2BB286A600E5EEA8 /* CoreDataTask.swift */; };
+		F5B06EA12BB28E4F00E5EEA8 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B06EA02BB28E4F00E5EEA8 /* TimerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		F5B06E872BB2753C00E5EEA8 /* ScalarBenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarBenchmarkView.swift; sourceTree = "<group>"; };
 		F5B06E892BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarBenchmarkViewModel.swift; sourceTree = "<group>"; };
 		F5B06E8B2BB275C400E5EEA8 /* ScalarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarType.swift; sourceTree = "<group>"; };
+		F5B06E922BB27C6B00E5EEA8 /* BenchmarkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkTask.swift; sourceTree = "<group>"; };
+		F5B06E942BB27D8100E5EEA8 /* UserDefaultsTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTask.swift; sourceTree = "<group>"; };
+		F5B06E962BB2867100E5EEA8 /* PropertyListTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListTask.swift; sourceTree = "<group>"; };
+		F5B06E982BB2868A00E5EEA8 /* SecureStorageTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorageTask.swift; sourceTree = "<group>"; };
+		F5B06E9A2BB286A600E5EEA8 /* CoreDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTask.swift; sourceTree = "<group>"; };
+		F5B06EA02BB28E4F00E5EEA8 /* TimerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,10 @@
 		F5AF32702BB2749800875D26 /* SwiftStorageBenchmark */ = {
 			isa = PBXGroup;
 			children = (
-				F5B06E852BB2752300E5EEA8 /* Benchmark */,
 				F5AF32712BB2749800875D26 /* SwiftStorageBenchmarkApp.swift */,
 				F5AF32732BB2749800875D26 /* ContentView.swift */,
+				F5B06E852BB2752300E5EEA8 /* Benchmark */,
+				F5B06EA22BB28EB700E5EEA8 /* Storage */,
 				F5AF32752BB2749900875D26 /* Assets.xcassets */,
 				F5AF32772BB2749900875D26 /* Preview Content */,
 			);
@@ -77,6 +90,8 @@
 		F5B06E852BB2752300E5EEA8 /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
+				F5B06E9F2BB28E4700E5EEA8 /* Helpers */,
+				F5B06E8D2BB27A0C00E5EEA8 /* Tasks */,
 				F5B06E862BB2752C00E5EEA8 /* Scalar */,
 			);
 			path = Benchmark;
@@ -90,6 +105,33 @@
 				F5B06E8B2BB275C400E5EEA8 /* ScalarType.swift */,
 			);
 			path = Scalar;
+			sourceTree = "<group>";
+		};
+		F5B06E8D2BB27A0C00E5EEA8 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B06E922BB27C6B00E5EEA8 /* BenchmarkTask.swift */,
+				F5B06E942BB27D8100E5EEA8 /* UserDefaultsTask.swift */,
+				F5B06E962BB2867100E5EEA8 /* PropertyListTask.swift */,
+				F5B06E982BB2868A00E5EEA8 /* SecureStorageTask.swift */,
+				F5B06E9A2BB286A600E5EEA8 /* CoreDataTask.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		F5B06E9F2BB28E4700E5EEA8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5B06EA02BB28E4F00E5EEA8 /* TimerHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F5B06EA22BB28EB700E5EEA8 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +206,15 @@
 			files = (
 				F5AF32742BB2749800875D26 /* ContentView.swift in Sources */,
 				F5AF32722BB2749800875D26 /* SwiftStorageBenchmarkApp.swift in Sources */,
+				F5B06E932BB27C6B00E5EEA8 /* BenchmarkTask.swift in Sources */,
+				F5B06E952BB27D8100E5EEA8 /* UserDefaultsTask.swift in Sources */,
 				F5B06E8A2BB2754E00E5EEA8 /* ScalarBenchmarkViewModel.swift in Sources */,
+				F5B06E972BB2867100E5EEA8 /* PropertyListTask.swift in Sources */,
 				F5B06E882BB2753C00E5EEA8 /* ScalarBenchmarkView.swift in Sources */,
 				F5B06E8C2BB275C400E5EEA8 /* ScalarType.swift in Sources */,
+				F5B06E992BB2868A00E5EEA8 /* SecureStorageTask.swift in Sources */,
+				F5B06E9B2BB286A600E5EEA8 /* CoreDataTask.swift in Sources */,
+				F5B06EA12BB28E4F00E5EEA8 /* TimerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

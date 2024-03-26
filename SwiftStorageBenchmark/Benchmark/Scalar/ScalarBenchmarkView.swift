@@ -24,33 +24,33 @@ struct ScalarBenchmarkView: View {
                 HStack {
                     Text("UserDefaults")
                     Spacer()
-                    VStack {
-                        Text("Write: --:--.--")
-                        Text("Read: --:--.--")
+                    VStack(alignment: .trailing) {
+                        Text("Write: \(String(format: "%.2f", viewModel.taskUserDefaults.writeTime ?? 0))")
+                        Text("Read: \(String(format: "%.2f", viewModel.taskUserDefaults.readTime ?? 0))")
                     }
                 }
                 HStack {
                     Text("Property list")
                     Spacer()
-                    VStack {
-                        Text("Write: --:--.--")
-                        Text("Read: --:--.--")
+                    VStack(alignment: .trailing) {
+                        Text("Write: \(String(format: "%.2f", viewModel.taskPropertyList.writeTime ?? 0))")
+                        Text("Read: \(String(format: "%.2f", viewModel.taskPropertyList.readTime ?? 0))")
                     }
                 }
                 HStack {
                     Text("Secure storage")
                     Spacer()
-                    VStack {
-                        Text("Write: --:--.--")
-                        Text("Read: --:--.--")
+                    VStack(alignment: .trailing) {
+                        Text("Write: \(String(format: "%.2f", viewModel.taskSecureStorage.writeTime ?? 0))")
+                        Text("Read: \(String(format: "%.2f", viewModel.taskSecureStorage.readTime ?? 0))")
                     }
                 }
                 HStack {
                     Text("Core Data")
                     Spacer()
-                    VStack {
-                        Text("Write: --:--.--")
-                        Text("Read: --:--.--")
+                    VStack(alignment: .trailing) {
+                        Text("Write: \(String(format: "%.2f", viewModel.taskCoreData.writeTime ?? 0))")
+                        Text("Read: \(String(format: "%.2f", viewModel.taskCoreData.readTime ?? 0))")
                     }
                 }
             }
@@ -59,9 +59,9 @@ struct ScalarBenchmarkView: View {
                     viewModel.actionTapped()
                 }
                 HStack {
-                    Text("Total time:")
+                    Text("Total time (seconds):")
                     Spacer()
-                    Text("--")
+                    Text(String(format: "%.2f", viewModel.timeInSeconds))
                 }
             }
         }
